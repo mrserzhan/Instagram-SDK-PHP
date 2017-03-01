@@ -30,13 +30,13 @@ class Location extends Model {
 
     /**
      * Latitude
-     * @var int
+     * @var float
      */
     protected $lat;
 
     /**
      * Longitude
-     * @var int
+     * @var float
      */
     protected $lng;
 
@@ -111,7 +111,7 @@ class Location extends Model {
     }
 
     /**
-     * @return int
+     * @return float
      */
     public function getLat()
     {
@@ -119,7 +119,7 @@ class Location extends Model {
     }
 
     /**
-     * @param int $lat
+     * @param float $lat
      */
     public function setLat($lat)
     {
@@ -127,7 +127,7 @@ class Location extends Model {
     }
 
     /**
-     * @return int
+     * @return float
      */
     public function getLng()
     {
@@ -135,7 +135,7 @@ class Location extends Model {
     }
 
     /**
-     * @param int $lng
+     * @param float $lng
      */
     public function setLng($lng)
     {
