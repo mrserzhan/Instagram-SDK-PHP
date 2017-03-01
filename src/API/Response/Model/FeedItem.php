@@ -80,6 +80,12 @@ class FeedItem extends Model {
     protected $user;
 
     /**
+     * Location
+     * @var Location
+     */
+    protected $location;
+
+    /**
      * Likers
      * @var User[]
      */
@@ -366,6 +372,22 @@ class FeedItem extends Model {
     public function setUser($user)
     {
         $this->user = $user;
+    }
+
+    /**
+     * @return Location
+     */
+    public function getLocation()
+    {
+        return $this->location;
+    }
+
+    /**
+     * @param Location $location
+     */
+    public function setLocation($location)
+    {
+        $this->location = $location;
     }
 
     /**
